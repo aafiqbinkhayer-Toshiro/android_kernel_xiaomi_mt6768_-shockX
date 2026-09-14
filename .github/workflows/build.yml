@@ -1,4 +1,4 @@
-       name: Build Kernel
+                - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/aafiqbinkhayer-Toshiro/android_kernel_xiaomi_mt6768_-shockX
@@ -9,5 +9,5 @@
           android-version: "11"
           anykernel3: true
           other-clang-url: https://github.com/kdrag0n/proton-clang
-          other-clang-branch: <pinned-commit-or-tag-here>   # don't track master
+          other-clang-branch: 20210522
           ccache: true
