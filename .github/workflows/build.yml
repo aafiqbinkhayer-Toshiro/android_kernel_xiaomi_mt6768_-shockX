@@ -14,9 +14,10 @@ jobs:
           config: lancelot_defconfig
           arch: arm64
           aosp-gcc: true
-          aosp-clang: true
-          aosp-clang-version: "r450784e"
           android-version: "11"
           anykernel3: true
+          other-clang-url: https://github.com/kdrag0n/proton-clang
+          other-clang-branch: master
+          ccache: true
           disable-lto: true
           ccache: true
