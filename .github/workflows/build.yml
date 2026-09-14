@@ -10,7 +10,7 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/aafiqbinkhayer-Toshiro/android_kernel_xiaomi_mt6768_-shockX
-          branch: shockwave
+          kernel-branch: shockwave
           config: lancelot_defconfig
           arch: arm64
           aosp-gcc: true
