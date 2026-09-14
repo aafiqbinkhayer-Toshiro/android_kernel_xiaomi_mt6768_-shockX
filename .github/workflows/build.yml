@@ -6,18 +6,11 @@ jobs:
   build-kernel:
     runs-on: ubuntu-22.04
     steps:
-      - name: Setup Python 2 for MediaTek DCT
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python2
-          sudo ln -sf /usr/bin/python2 /usr/bin/python
-          sudo ln -sf /usr/bin/python2 /usr/local/bin/python
-
       - name: Build Kernel
-        uses: dabao1955/kernel_build_action@v1.6.1
+        uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/aafiqbinkhayer-Toshiro/android_kernel_xiaomi_mt6768_-shockX
-          branch: shockwave
+          kernel-branch: shockwave
           config: lancelot_defconfig
           arch: arm64
           aosp-gcc: true
