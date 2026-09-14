@@ -1,0 +1,21 @@
+name: CI - MT6768 ShockX Kernel Build
+on:
+  workflow_dispatch:
+
+jobs:
+  build-kernel:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build Kernel
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/aafiqbinkhayer-Toshiro/android_kernel_xiaomi_mt6768_-shockX
+          kernel-branch: shockwave
+          config: lancelot_defconfig
+          arch: arm64
+          aosp-gcc: true
+          android-version: "11"
+          anykernel3: true
+          other-clang-url: https://github.com/kdrag0n/proton-clang
+          other-clang-branch: master
+          ccache: true
