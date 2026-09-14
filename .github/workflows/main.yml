@@ -1,0 +1,13 @@
+                - name: Build Kernel
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/aafiqbinkhayer-Toshiro/android_kernel_xiaomi_mt6768_-shockX
+          kernel-branch: shockwave
+          config: lancelot_defconfig
+          arch: arm64
+          aosp-gcc: true
+          android-version: "11"
+          anykernel3: true
+          other-clang-url: https://github.com/kdrag0n/proton-clang
+          other-clang-branch: 20210522
+          ccache: true
