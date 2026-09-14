@@ -1,4 +1,4 @@
-Name: CI - MT6768 ShockX Kernel Build
+name: CI - MT6768 ShockX Kernel Build
 on:
   workflow_dispatch:
 
