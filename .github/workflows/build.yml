@@ -16,5 +16,3 @@ jobs:
           aosp-gcc: true
           aosp-clang: true
           android-version: "11"
-          anykernel3: true
-          python-27: true
