@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build Kernel
-        uses: dabao1955/kernel_build_action@v1.6.1
+        uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/aafiqbinkhayer-Toshiro/android_kernel_xiaomi_mt6768_-shockX
           branch: shockwave
@@ -16,3 +16,5 @@ jobs:
           aosp-gcc: true
           aosp-clang: true
           android-version: "11"
+          anykernel3: true
+          python-27: true
