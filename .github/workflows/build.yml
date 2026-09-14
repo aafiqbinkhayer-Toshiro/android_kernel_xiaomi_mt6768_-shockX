@@ -19,5 +19,3 @@ jobs:
           other-clang-url: https://github.com/kdrag0n/proton-clang
           other-clang-branch: master
           ccache: true
-          disable-lto: true
-          ccache: true
